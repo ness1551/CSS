@@ -1,0 +1,211 @@
+
+body{
+  background: black;
+  font-family: 'Dancing Script';font-size: 20px;
+}
+.contenido{
+  width: 900px;
+  align-items: center;
+  margin: auto;
+}
+header{
+  background: #5b7989;
+  border-radius: 10px 10px 0px 0px;
+  width: 100%;
+  animation-name: ani-header;
+  animation-duration: 1.5s;
+}
+@keyframes ani-header {
+  0%{
+    position: relative;
+    margin-top: 150%;
+  }
+  60%{
+    position: relative;
+    margin-top: -5%;
+  }
+  100%{
+    position: relative;
+    margin-top: 0px;
+}
+}
+#titulo{
+  text-align: left;
+  width: 70%;
+  color: white;
+  text-shadow: 3px 3px 2px #02010a;
+}
+#titulo h1 {
+  padding-left: 15px;
+}
+#menu{
+  text-align: right;
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  margin:auto;
+}
+#menu div {
+  color: white;
+  padding: 10px;
+}
+#cabecera {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+article{
+  width: 100%;
+}
+.articulo{
+    background-color: #82c3a6;
+}
+#imagen1{
+  text-align: center;
+  padding: 15px;
+}
+#imagen1 img{
+  width: 70%;
+  box-shadow: 2px 2px #02010a;
+}
+.contenedor img {
+  width: 80%;
+  border: 2px solid black;
+}
+.contenedor{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: #d5c75f;
+  padding-top: 20px;
+}
+.contenedor > div {
+  width: 50%;
+  text-align: center;
+  padding: 5px;
+}
+#imagen2 img:hover{
+  transform: rotate(10deg);
+  box-shadow: 2px 2px #82c3a6;
+}
+#imagen3 img:hover{
+  transform: translate(5px,-20px);
+  box-shadow: 2px 2px #82c3a6;
+}
+footer {
+  background: #C6d5c5;
+  width: 100%;
+  border-radius: 0px 0px 10px 10px;
+  text-align: center;
+}
+.pie > div{
+  width: 100%;
+}
+.pie{
+  display: flex;
+  flex-direction: column;
+  font-family: 'Dancing Script';font-size: 16px;
+}
+.galeria{
+  background-color: #82c3a6;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  padding-top: 20px;
+}
+.galeria div {
+  width: 33%;
+  text-align: center;
+  margin: auto;
+}
+.galeria div img {
+  width: 95%;
+}
+.galeria div:nth-child(1) {
+  filter: blur(10px);
+}
+.galeria div:nth-child(even){
+  filter: grayscale(100%);
+}
+.galeria div:nth-child(3) {
+  filter: sepia(90%);
+}
+@media (max-width:900px){
+  .contenido{
+    width: 100%;
+    align-items: center;
+    margin: auto;
+  }
+  .contenedor{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #d5c75f;
+    padding-top: 20px;
+  }
+  .contenedor > div {
+    width: 100%;
+    text-align: center;
+    padding: 0px;
+  }
+  .articulo div #imagen1 {
+    width: 100%;
+    margin: auto;
+  }
+  #imagen1 img{
+    width: 75%;
+    box-shadow: 2px 2px #02010a;
+  }
+  .contenedor img {
+    width: 70%;
+    border: 2px solid black;
+  }
+  #cabecera {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  #titulo{
+    text-align: center;
+    width: 100%;
+    color: white;
+    text-shadow: 3px 3px 2px #02010a;
+  }
+  #menu{
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+  }
+  #menu > div{
+    margin: auto;
+  }
+  #titulo h1 {
+    padding-left: 0px;
+  }
+  .galeria{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding-top: 20px;
+  }
+  .galeria div {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .galeria div img {
+    width: 60%;
+  }
+  .pie > div{
+    width: 25%;
+  }
+  .pie{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Dancing Script';font-size: 14px;
+  }
+}
